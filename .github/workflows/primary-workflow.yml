@@ -1,0 +1,35 @@
+name: Primary Workflow
+on: [workflow_dispatch, push]
+
+jobs:
+  NPM:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add code
+        uses: actions/checkout@v6
+      - name: Add node
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: Add dependencies
+        run: npm ci
+      - name: Run test script
+        run: npm test
+  MANUAL:
+    needs: NPM
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run bash manually
+        run: echo "THIS IS A BASH ECHO"
+  DENO:
+    needs: [NPM, MANUAL]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add code
+        uses: actions/checkout@v4
+      - name: Add deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: lts
+      - name: Run typescript file
+        run: deno print.ts

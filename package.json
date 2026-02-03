@@ -1,0 +1,21 @@
+{
+  "name": "random-prac-3",
+  "version": "1.0.0",
+  "description": "Random practice repo #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"THIS IS THE TEST SCRIPT FROM THE PACKAGE.JSON!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digimoniker/random-prac-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/digimoniker/random-prac-3/issues"
+  },
+  "homepage": "https://github.com/digimoniker/random-prac-3#readme"
+}
