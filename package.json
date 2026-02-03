@@ -4,7 +4,7 @@
   "description": "Random practice repo #3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"THIS IS THE TEST SCRIPT FROM THE PACKAGE.JSON!\" && exit 1"
+    "test": "echo \"THIS IS THE TEST SCRIPT FROM THE PACKAGE.JSON!\""
   },
   "repository": {
     "type": "git",
