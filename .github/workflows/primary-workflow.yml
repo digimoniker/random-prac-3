@@ -32,4 +32,4 @@ jobs:
         with:
           deno-version: lts
       - name: Run typescript file
-        run: deno print.ts
+        run: deno printApp/print.ts
