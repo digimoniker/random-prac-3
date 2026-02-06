@@ -1,0 +1,12 @@
+name: Activity Workflow
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  ActivityJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print something
+        run: echo "PRINTED SOMETHING!!"
