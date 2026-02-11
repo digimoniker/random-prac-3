@@ -1,5 +1,6 @@
 name: Event Workflow
 on:
+  workflow-dispatch:
   push:
     branches:
       - main
