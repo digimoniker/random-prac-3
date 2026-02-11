@@ -1,0 +1,14 @@
+name: Event Workflow
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .github/workflows/*
+
+jobs:
+  Event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo something
+        run: echo "HEY THIS IS THE TEST"
